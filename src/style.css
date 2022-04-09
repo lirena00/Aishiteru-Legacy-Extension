@@ -1,0 +1,250 @@
+@font-face {
+  font-family: customfont;
+  src: url(../src/Austein-Script.woff);
+}
+.gradient-text {
+  background: rgb(215,89,200);
+  background: linear-gradient(0deg, rgba(215,89,200,1) 0%, rgba(116,114,250,1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.source{
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+body{
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+  background-repeat: no-repeat;
+  min-width: 500px;
+  margin-top: 0px;
+}
+
+img{
+  max-width: 600px;
+  max-height: 450px;
+}
+
+h1{
+  font-family: customfont;
+  font-size: xx-large;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
+.next {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(215,89,200);
+  background: linear-gradient(0deg, rgba(215,89,200,1) 0%, rgba(116,114,250,1) 100%);
+}
+.next:hover {
+  box-shadow: 0 0 10px rgba(116,114,250,1),0 0 70px rgba(215,89,200,1) ,0 0 80px rgba(116,114,250,1);
+}
+.next:before,
+.next:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:5px;
+  width:0;
+  background: #fff;
+
+  transition:400ms ease all;
+}
+.next:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.next:hover:before,
+.next:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.header {
+  background-color:transparent;
+  position: relative;
+  width: 100%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: transparent;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: transparent;
+}
+
+.header .logo {
+  float: left;
+  padding: 0px 10px;
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 500px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+.tagbtn {
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  background: rgb(215,89,200);
+  background: linear-gradient(0deg, rgba(215,89,200,1) 0%, rgba(116,114,250,1) 100%);
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.tagbtn:hover {
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color:rgb(215,89,200);
+  background-color: whitesmoke;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+
+.seltagbtn{
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: whitesmoke;
+  background: rgb(81,81,207);
+  background: linear-gradient(0deg, rgba(81,81,207,1) 0%, rgba(34,193,195,1) 100%);
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.seltagbtn:hover{
+  background: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(81,81,207);
+  background: whitesmoke;
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
