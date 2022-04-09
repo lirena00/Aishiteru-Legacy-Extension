@@ -1,0 +1,12 @@
+{
+    "name": "Aishiteru",
+    "version": "1.0.0",
+    "description": "Waifu pics from waifu.im",
+    "manifest_version": 3,
+    "author": "Lirena Kiyuga",
+    "action":{
+        "default_popup": "index.html",
+        "default_icon": "images/marin.png",
+        "default_title": "Aishiteru"
+    }
+}
