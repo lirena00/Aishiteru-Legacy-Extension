@@ -12,7 +12,7 @@ A web extension to get waifu pics from [waifu.im](http://waifu.im/)!
 - Clone the repository or download the zip file:
   ```bash
   git clone https://github.com/LiReNa00/Aishiteru
-  cd Geddit
+  cd Aishiteru
   ```
 
 
@@ -27,7 +27,7 @@ Contributions are always welcome!
 - Clone the repository:
   ```bash
   git clone https://github.com/LiReNa00/Aishiteru.git
-  cd Geddit
+  cd Aishiteru
   ```
 - Create a new branch:
   ```bash
