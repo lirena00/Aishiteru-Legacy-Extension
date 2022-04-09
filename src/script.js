@@ -1,7 +1,7 @@
-var requrl ="https://api.waifu.im/random/?selected_tags=waifu&is_nsfw=False"
+let requrl ="https://api.waifu.im/random/?selected_tags=waifu&is_nsfw=False"
 
 
-var styleElement = document.createElement('style');
+let styleElement = document.createElement('style');
 styleElement.id = 'remove-scroll-style';
 styleElement.textContent =
     'html::-webkit-scrollbar{display:none !important}' +
